@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Brand Section */
+.brand-section {
+    flex: 1;
+    padding-right: 32px;
+    margin-bottom: 100px;
+}
+
+.fb-logo {
+    height: 106px;
+    margin: -20px;
+}
+
+.tagline {
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 32px;
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Login Card */
+.login-section {
+    width: 100%;
+    max-width: 396px;
+}
+
+.login-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+/* Error Box Styling */
+.error-box {
+    background-color: #ffebe8;
+    border: 1px solid #dd3c10;
+    padding: 12px;
+    margin-bottom: 16px;
+    font-size: 13px;
+    border-radius: 4px;
+    line-height: 1.4;
+}
+
+.highlight-link {
+    color: #0866ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+input {
+    width: 100%;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 17px;
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #0866ff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.forgot-link {
+    display: block;
+    text-align: center;
+    margin: 16px 0;
+    color: #0866ff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #dadde1;
+    margin-bottom: 20px;
+}
+
+.create-btn {
+    display: block;
+    margin: 0 auto;
+    background-color: #42b72a;
+    color: #fff;
+    padding: 0 16px;
+    line-height: 48px;
+    border: none;
+    border-radius: 6px;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.footer-note {
+    text-align: center;
+    margin-top: 28px;
+    font-size: 14px;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .brand-section {
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .tagline {
+        font-size: 24px;
+        margin: 0 auto;
+    }
+}
